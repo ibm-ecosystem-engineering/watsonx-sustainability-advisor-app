@@ -1,5 +1,17 @@
 # Watsonx Sustainbility Advisor App
 
+The Sustainability Reporting Manager in IBM Envizi spends a lot of time in preparing the responses to the various questions from the disclosure reports.
+
+Watson-x Sustainability Advisor can help the sustainability reporting manager to get the responses to the various questions very quickly.
+
+It leverages watsonx Assistant to take the questions from the sustainability reporting manager.
+
+For the given question, the Watsonx Assistant gets the relevant text passages from the Watson Discovery that contains the various reports and informations loaded from the Envizi.
+
+Once the passages are retrieved from the Watson discovery, this watsonx Assistant pass the passes to Watsonx.ai to make a summary out of it.
+
+The summary response is shown to the user as an answer to their question.
+
 ## 1. Source code details
 
 ### 1.1 Watson Assistant UI and API
@@ -22,9 +34,9 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 
 ### 1.2 React UI and API
 
-<img src="images/advisor.png">
+There is the React UI based version of Watsonx Sustainbility Advisor is also available.
 
-The `app` folder of this repo contains the python app code, which uses Watson Discovery, and Watsonx.ai  to respond to the queries from the UI.
+<img src="images/advisor.png">
 
 The `web` folder contains the `ReactJS UI` code, which calls the above python app to query llm.
 
