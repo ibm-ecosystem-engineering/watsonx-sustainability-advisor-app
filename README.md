@@ -1,16 +1,23 @@
 # Watsonx Sustainbility Advisor App
 
+
 The Sustainability Reporting Manager in IBM Envizi spends a lot of time in preparing the responses to the various questions from the disclosure reports.
+
+We leveraged the generative AI capability of watsonx.ai to create the Watsonx Sustainability Advisor, a tool that serves as a dynamic guide to respond to any given reporting framework question.
 
 Watson-x Sustainability Advisor can help the sustainability reporting manager to get the responses to the various questions very quickly.
 
-It leverages watsonx Assistant to take the questions from the sustainability reporting manager.
+It leverages watsonx Assistant to get the questions from the sustainability reporting manager.
 
-For the given question, the Watsonx Assistant gets the relevant text passages from the Watson Discovery that contains the various reports and informations loaded from the Envizi.
+For the given question, the Watson Assistant send this question to Watson Discovery, which does a semantic search by scanning through various sustainability reports and retrieves the relevant document passages back to the Watson Assistant.
 
-Once the passages are retrieved from the Watson discovery, this watsonx Assistant pass the passes to Watsonx.ai to make a summary out of it.
+Then watson Assistant sends the question along with the document passages that are retrieved by the Watson Discovery as an instruction to Watsonx.ai
 
-The summary response is shown to the user as an answer to their question.
+Watsonx.ai reads the prompt and uses the LLM model to summarize the answer for the question back to the watson Assistant. 
+
+The watson Assistant shows the summary response to the user as an answer to their question.
+
+<img src="images/arch-wa.png">
 
 ## 1. Source code details
 
