@@ -22,11 +22,11 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 
 ### Watson Assistant UI
 
-<img src="images/advisor_wa.png">
+<img src="images/advisor-wa.png">
 
 The `web-wa` folder contains the ReactJS UI code and it opens up the Watson-Assistant in the screen. Then the Watson-Assistant would calls Watson Discovery, and Watsonx.ai  to respond to the queries of the user.
 
-<img src="images/arch_wa.png">
+<img src="images/arch-wa.png">
 
 ## 1.Installation
 
