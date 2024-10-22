@@ -1,5 +1,4 @@
-# Watsonx Sustainbility Advisor App
-
+# Watsonx Sustainability Advisor App
 
 The Sustainability Reporting Manager in IBM Envizi spends a lot of time in preparing the responses to the various questions from the disclosure reports.
 
@@ -41,7 +40,7 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 
 ### 1.2 React UI and API
 
-There is the React UI based version of Watsonx Sustainbility Advisor is also available.
+There is the React UI based version of Watsonx Sustainability Advisor is also available.
 
 <img src="images/advisor.png">
 
@@ -61,7 +60,7 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 
 ### 2.1. Install python 3.9 version
 
-1. Run the below commnad to install python 3.9 version.
+1. Run the below command to install python 3.9 version.
 
 ```
 brew install python@3.9
@@ -76,7 +75,7 @@ echo "alias python=/opt/homebrew/bin/python3.9" >> ~/.zshrc
 
 ### 2.2. Install dependent libraries
 
-1. Run the below commnads to install the dependent libraries
+1. Run the below commands to install the dependent libraries
 
 ```
 python -m pip install python-dotenv
@@ -125,7 +124,7 @@ DATA_PATH=./datasets
 
 1. Goto the root folder of this app.
 
-2. Run the below commnad to start the app in virtual environment called `venv` .
+2. Run the below command to start the app in virtual environment called `venv` .
 
 ```
 python -m venv myvenv
@@ -137,7 +136,7 @@ python app/main.py
 
 1. Goto the root folder of this app.
 
-2. Run the below commnad to deactivate the virtual environment.
+2. Run the below command to deactivate the virtual environment.
 
 ```
 deactivate
