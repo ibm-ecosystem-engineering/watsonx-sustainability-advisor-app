@@ -5,6 +5,9 @@
 
 ### UI and API
 
+<img src="images/advisor.png">
+
+
 The `app` folder of this repo contains the python app code, which uses Watson Discovery, and Watsonx.ai  to respond to the queries from the UI.
 
 The `web` folder contains the ReactJS UI code, which calls the above python app to query llm.
@@ -14,12 +17,16 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 - Watson Discovery
 - LangChain
 
+
 <img src="images/arch.png">
 
 ### Watson Assistant UI
 
+<img src="images/advisor_wa.png">
+
 The `web-wa` folder contains the ReactJS UI code and it opens up the Watson-Assistant in the screen. Then the Watson-Assistant would calls Watson Discovery, and Watsonx.ai  to respond to the queries of the user.
 
+<img src="images/arch_wa.png">
 
 ## 1.Installation
 
