@@ -1,9 +1,8 @@
-## Watsonx Sustainbility Advisor App
+# Watsonx Sustainbility Advisor App
 
+## 1. Source code details
 
-## Source code details
-
-### UI and API
+### 1.1 UI and API
 
 <img src="images/advisor.png">
 
@@ -20,7 +19,7 @@ This solution follows RAG architecture model.  The tech stacks used here are the
 
 <img src="images/arch.png">
 
-### Watson Assistant UI
+### 1.2 Watson Assistant UI and API
 
 <img src="images/advisor-wa.png">
 
@@ -28,9 +27,9 @@ The `web-wa` folder contains the ReactJS UI code and it opens up the Watson-Assi
 
 <img src="images/arch-wa.png">
 
-## 1.Installation
+## 2.Installation
 
-### 1.1. Install python 3.9 version
+### 2.1. Install python 3.9 version
 
 1. Run the below commnad to install python 3.9 version.
 
@@ -45,7 +44,7 @@ echo "alias python3=/opt/homebrew/bin/python3.9" >> ~/.zshrc
 echo "alias python=/opt/homebrew/bin/python3.9" >> ~/.zshrc
 ```
 
-### 1.2. Install dependent libraries
+### 2.2. Install dependent libraries
 
 1. Run the below commnads to install the dependent libraries
 
@@ -71,17 +70,7 @@ python -m pip install ibm-watson
 python -m pip install libffi-dev
 ```
 
-### 1.3. Create virtual environment
-
-1. Goto the root folder of this app.
-
-2. Run the below commnad to install python 3.9 version. Here `venv` is the virtual environment.
-
-```
-python -m venv myvenv
-```
-
-## 2. Create .env file
+### 2.3 Create .env file for the app
 
 Create the .env file in the root folder of the app with the below content.
 
@@ -106,9 +95,10 @@ DATA_PATH=./datasets
 
 1. Goto the root folder of this app.
 
-2. Run the below commnad to start the app.
+2. Run the below commnad to start the app in virtual environment called `venv` .
 
 ```
+python -m venv myvenv
 source myvenv/bin/activate
 python app/main.py
 ```
