@@ -1,0 +1,32 @@
+gandhi@Jeyas-MacBook-Pro watsonx-main3 % pyenv install 3.10.2
+
+Installed Python-3.10.2 to /Users/gandhi/.pyenv/versions/3.10.2
+
+
+
+pyenv global 3.10.2
+python -m venv genai
+
+source genai/bin/activate
+python -m pip install -r requirements.txt
+
+deactivate
+
+
+=======
+
+
+#FOR MAC OS
+export HNSWLIB_NO_NATIVE=1
+
+pyenv install 3.10.2
+pyenv global 3.10.2
+
+virtualenv venv -p python3.10
+source venv/bin/activate
+
+#pip freeze > requirements.txt
+pip install -r requirements.txt
+pip install -r requirements.txt
+
+=============

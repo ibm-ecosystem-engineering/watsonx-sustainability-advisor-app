@@ -1,0 +1,10 @@
+npx create-react-app form-demo
+
+wrong ..... npm install boostrap 
+wrong ..... npm install react-bootstrap@1.5.2
+npm install --save react-bootstrap bootstrap
+
+npm install axios -save
+
+===========================
+

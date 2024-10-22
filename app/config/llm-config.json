@@ -1,0 +1,37 @@
+{
+    "RAG":{
+        "model_id": "google/flan-t5-xl",
+        "parameters": {
+            "decoding_method": "greedy",
+            "temperature": 0.5,
+            "repetition_penalty": 2,
+            "min_new_tokens": 50,
+            "max_new_tokens": 500
+        },
+        "prompt": "Use the following pieces of context to answer the question at the end. If you don't know the answer, just say that you don't know, don't try to make up an answer.\\\\n {context}\\\\nQuestion: {question}\\\\nHelpful Answer: "  
+    },
+    "SUMMARIZATION": {
+        "model_id": "ibm/mpt-7b-instruct",
+        "parameters": {
+            "decoding_method": "greedy",
+            "temperature": 0.5,
+            "min_new_tokens": 50,
+            "max_new_tokens": 180,
+            "repetition_penalty": 2
+        },
+        "template": {
+            "id": "prompt_builder",
+            "data": {
+            "instruction": "You will be given a list of product reviews. Your task is to generate a short summary, only from given product reviews from an ecommerce site to give feedback to another customer.",
+            "input_prefix": "Product Reviews:",
+            "output_prefix": "Summary: ",
+            "examples": [
+                    {
+                    "input": "1: I am very happy with the way it cleans, and the fact that it is energy efficient.\n2: Love it! Very efficient. Best washer I’ve owned. Clothes come out almost dry.\n3: Excellent choice for us. Home depot Thanksgiving deals were fantastic to buy a washer and dryer. Device wise looks pretty efficient with water usage, which is the primary concern for us economically and environmentally speaking.",
+                    "output": "Here are some key points from the given customer experiences:\n\nThe customers like how efficiently their clothes get cleaned and comes out dry by using less electricity/water than previous models they have used in past."
+                    }
+                ]
+            }
+        }
+    }
+}

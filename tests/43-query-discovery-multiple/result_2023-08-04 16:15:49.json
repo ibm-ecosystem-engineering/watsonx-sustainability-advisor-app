@@ -1,0 +1,17 @@
+{
+  "result": [
+    {
+      "basequestion": "",
+      "id": "Custom",
+      "question": "What is the product packaging methdology followed",
+      "response": "IBM focuses on the following metrics: reuse, reduction due to improved design, use of more environmentally preferable materials, and incorporation of recycled contents. IBM also has sustained a voluntary goal for the responsible sourcing of paper and paper/wood-based packaging since 2002",
+      "scores": {
+        "rouge1": 0.12949640287769784,
+        "rouge2": 0.007246376811594204,
+        "rougeL": 0.07913669064748201,
+        "rougeLsum": 0.07913669064748201
+      },
+      "topic": ""
+    }
+  ]
+}

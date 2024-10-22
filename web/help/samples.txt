@@ -1,0 +1,13 @@
+Answer the question in the format as given in example
+
+
+who is the finance minister of india
+The finance minister of India is Nirmala
+
+who is the home minister of india
+The home minister of India is Amit Shah
+
+
+who is the prime minister of india
+
+The prime minister of India is Narendra Damodardas Modi

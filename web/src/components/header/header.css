@@ -1,0 +1,79 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    padding-bottom: 1px;
+    margin:0;
+    text-align: left;
+    background-color: rgb(48, 50, 62);
+    color: white;
+    /* font-family: Nunito Sans !important; */
+  }
+
+  .myheading1 {
+    /* background-color: red; */
+    color: white;
+    text-align: left;
+    font-size: 28px;
+    font-style: bold;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin : 0;
+    height: 40px;
+    width: 100%;
+  }
+
+  .myheading2 {
+    /* background-color: green; */
+
+    color: #6d9af9;
+    /* color: white; */
+
+    text-align: left;
+    font-size: 32px;
+    font-style: bold;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    height: 40px;
+  }
+
+  .mysubheading {
+    /* color: rgb(110, 86, 246); */
+    color: white;
+
+    text-align: left;
+    font-size: 12px;
+    font-style: bold;
+    vertical-align: bottom;
+  }
+
+  .logo-image {
+    text-align: right;
+  }
+
+
+  .enhanced-title {
+    color: #808080;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.13;
+    font-weight: bold !important;
+  }
+  
+  .enhanced-title2 {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 1.13;
+    font-weight: bold !important;
+  }
+  
+  .enhanced-title-blue {
+    color: #0f62fe;
+  }
+  

@@ -1,0 +1,17 @@
+{
+  "result": [
+    {
+      "basequestion": "",
+      "id": "Custom",
+      "question": "What is the product packaging methdology followed",
+      "response": "I couldn't find that information.",
+      "scores": {
+        "rouge1": 0.008298755186721992,
+        "rouge2": 0.0,
+        "rougeL": 0.008298755186721992,
+        "rougeLsum": 0.008298755186721992
+      },
+      "topic": ""
+    }
+  ]
+}

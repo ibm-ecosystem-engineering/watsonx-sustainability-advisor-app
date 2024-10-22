@@ -1,0 +1,16 @@
+### list all session
+tmux ls
+
+root@ESG-advisor1:~# tmux ls
+0: 1 windows (created Tue Oct  3 07:36:10 2023)
+3: 1 windows (created Thu Oct  5 11:21:30 2023)
+
+### Goto the existing session
+tmux attach-session -t 0
+tmux attach-session -t 3
+
+### new session
+tmux
+
+### come out of session
+cntrl b d

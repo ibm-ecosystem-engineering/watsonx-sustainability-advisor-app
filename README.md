@@ -1,0 +1,118 @@
+## Watsonx Sustainbility Advisor App
+
+
+## Source code details
+
+### UI and API
+
+The `app` folder of this repo contains the python app code, which uses Watson Discovery, and Watsonx.ai  to respond to the queries from the UI.
+
+The `web` folder contains the ReactJS UI code, which calls the above python app to query llm.
+
+This solution follows RAG architecture model.  The tech stacks used here are the following
+- Watsonx.ai
+- Watson Discovery
+- LangChain
+
+<img src="images/arch.png">
+
+### Watson Assistant UI
+
+The `web-wa` folder contains the ReactJS UI code and it opens up the Watson-Assistant in the screen. Then the Watson-Assistant would calls Watson Discovery, and Watsonx.ai  to respond to the queries of the user.
+
+
+## 1.Installation
+
+### 1.1. Install python 3.9 version
+
+1. Run the below commnad to install python 3.9 version.
+
+```
+brew install python@3.9
+```
+
+2. Run the below command to ensure python command uses homebrew’s version of python3
+
+```
+echo "alias python3=/opt/homebrew/bin/python3.9" >> ~/.zshrc
+echo "alias python=/opt/homebrew/bin/python3.9" >> ~/.zshrc
+```
+
+### 1.2. Install dependent libraries
+
+1. Run the below commnads to install the dependent libraries
+
+```
+python -m pip install python-dotenv
+python -m pip install ibm-generative-ai
+python -m pip install "ibm-generative-ai[langchain]"
+python -m pip install pypdf
+python -m pip install InstructorEmbedding
+python -m pip install 'transformers[torch]'
+python -m pip install sentence-transformers
+python -m pip install Flask flask-restful flask_httpauth
+python -m pip install cachetools
+python -m pip install unstructured
+python -m pip install chromadb
+python -m pip install faiss-cpu
+
+python -m pip install flask_cors
+python -m pip install ibm-cos-sdk
+python -m pip install rogue
+python -m pip install ibm-watson
+
+python -m pip install libffi-dev
+```
+
+### 1.3. Create virtual environment
+
+1. Goto the root folder of this app.
+
+2. Run the below commnad to install python 3.9 version. Here `venv` is the virtual environment.
+
+```
+python -m venv myvenv
+```
+
+## 2. Create .env file
+
+Create the .env file in the root folder of the app with the below content.
+
+```
+LOGLEVEL=DEBUG
+
+### Watsonx.ai
+GENAI_KEY=<REPLACE IT WITH YOUR IBM GENAI APIKEY>
+GENAI_API=https://us-south.ml.cloud.ibm.com/ml/v1-beta/generation/text?version=2023-05-29
+PROJECT_ID="2677a1e4-xxxxxxxx"
+
+### Watson Discovery
+WD_API_KEY=<REPLACE IT WITH YOUR WATSON DESCOVERY API KEY>
+WD_SERVICE_URL=https://api.us-south.discovery.watson.cloud.ibm.com/instances/a83d0a4b-a6d9-41db-972a-5b70d5fc2c91
+WD_PROJECT_ID=80c28471-xxxxxxx
+
+### Dataset
+DATA_PATH=./datasets
+```
+
+## 3. Starting the App
+
+1. Goto the root folder of this app.
+
+2. Run the below commnad to start the app.
+
+```
+source myvenv/bin/activate
+python app/main.py
+```
+
+## 4. To deactivate the virtual environment
+
+1. Goto the root folder of this app.
+
+2. Run the below commnad to deactivate the virtual environment.
+
+```
+deactivate
+```
+
