@@ -6,9 +6,9 @@ export default function WatsonAssistant(props) {
     <div className="watsonassistant" >
        <script>
             {/* window.watsonAssistantChatOptions = {
-                integrationID: "8f92ab65-c826-4f2d-818b-de024efb4aca", // The ID of this integration.
+                integrationID: "sd3sdfs-4326-4f2d-818b-ab345chd9egr", // The ID of this integration.
                 region: "us-south", // The region your integration is hosted in.
-                serviceInstanceID: "d9030299-9c39-4b9e-ab62-dd37cd614594", // The ID of your service instance.
+                serviceInstanceID: "wwe23fsd-9c39-sdfsd-sdfs-dswewfs", // The ID of your service instance.
                 onLoad: async (instance) => { await instance.render(); }
             };
             setTimeout(function(){
